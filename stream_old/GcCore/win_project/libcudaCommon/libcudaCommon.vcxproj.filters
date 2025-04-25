@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{bfebc29d-eb97-41d7-a6cb-b9049b6a7935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source FIles">
+      <UniqueIdentifier>{f6ad19a9-cd0d-4499-975c-02faba8e59d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\CudaError.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\DefaultType.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\DynamicArray3dDevice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\DynamicArray3dHost.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\K_DynamicArray3dDevice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\K_QueueDevice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\K_StaticArray3dDevice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\K_Surface3dDevice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\K_Texture3dDevice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\QueueDevice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\StaticArray3dDevice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\StaticArray3dHost.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\Surface3dDevice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libCommon\Texture3dDevice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\cuda\libCommon\Dummy.cpp">
+      <Filter>Source FIles</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

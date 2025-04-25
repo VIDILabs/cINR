@@ -1,0 +1,11 @@
+bin/
+build/
+obj/
+*.pyc
+*.opensdf
+*.vcxproj.user
+*.sdf
+*.suo
+*.pdb
+*.VC.db
+*.opendb

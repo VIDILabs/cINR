@@ -1,0 +1,15 @@
+# Config file for the @CONF_PACKAGE_NAME@ package.
+#
+# Defines the following macros:
+#
+# @CONF_PACKAGE_NAME@_BINARY_DIR	- Binary directory
+# @CONF_PACKAGE_NAME@_INCLUDE_DIR	- Include directories
+
+# Imported targets definition file
+if(NOT TARGET @CONF_PACKAGE_NAME@)
+  include("@DEPENDENCIES_CONFIGFILEPACKAGES_DIR@/@CONF_PACKAGE_NAME@-targets.cmake")
+endif()
+
+# Macro definitions
+set(@CONF_PACKAGE_NAME@_BINARY_DIR		@CONF_BINARY_DIR@)
+set(@CONF_PACKAGE_NAME@_INCLUDE_DIR		@CONF_INCLUDE_DIR@)

@@ -1,0 +1,360 @@
+{
+    "dataSource": [
+        {
+            "dimensions": {
+                "x": 10240,
+                "y": 7680,
+                "z": 1536
+            },
+            "endian": "LITTLE_ENDIAN",
+            "fileName": [
+                // "F:/dns/dns_10240x7680x1536_float64.raw",
+                // "/media/storage1/qadwu/volume/dns/dns_10240x7680x1536_double.raw"
+            ],
+            "fileUpperLeft": false,
+            "format": "REGULAR_GRID_RAW_BINARY",
+            "id": 1,
+            "name": "dns_10240x7680x1536_float64.raw",
+            "offset": 0,
+            "type": "DOUBLE"
+        }
+    ],
+    "snapshot": [],
+    "cache": {
+      "config" : [
+        "/home/deralik/GitHub/cINR_env/cINR/data/configs/config_dns.cfg"
+      ],
+      "capacity": {
+        "x": 30,
+        "y": 30,
+        "z": 29
+      },
+      "numLevels": 1
+    },
+    "macrocell": {
+      "fileName" : "/home/deralik/GitHub/cINR_env/cINR/data/data/params_dns.json",
+      "mcSize" : {
+        "x": 16,
+        "y": 16,
+        "z": 16
+      }
+    },
+    "view": {
+        "backgroundColor": {
+            "a": 1,
+            "b": 0,
+            "g": 0,
+            "r": 0
+        },
+        // (C)urrent camera:
+        // - from :(8442.81,9672.34,3115.75)
+        // - poi  :(369.145,-12.6582,-294.642)
+        // - upVec:(-0.1482,-0.215897,0.963959)
+        // - frame:{ vx = (-0.771114,0.634524,0.0235617), vy = (-0.1482,-0.215897,0.963959), vz = (0.617424,0.740648,0.260806)}
+        "camera": {
+            "center": {
+                "x": 5396.05,
+                "y": 3914.04,
+                "z": 447.44
+            },
+            "eye": {
+                "x": 12340.8,
+                "y": 12244.8,
+                "z": 3380.97
+            },
+            "fovy": 60,
+            "projectionMode": "PERSPECTIVE",
+            "up": {
+                "x": -0.148364,
+                "y": -0.216136,
+                "z": 0.965025
+            },
+            "zFar": 10000,
+            "zNear": 10
+        },
+        "globalAmbient": {
+            "a": 0,
+            "b": 0,
+            "g": 0,
+            "r": 0
+        },
+        "globalLighting": true,
+        "lightSource": {
+            "ambient": {
+                "a": 1,
+                "b": 1,
+                "g": 1,
+                "r": 1
+            },
+            "diffuse": {
+                "a": 1,
+                "b": 1,
+                "g": 1,
+                "r": 1
+            },
+            "position": {
+                "w": 0,
+                "x": 0.074398323893547058,
+                "y": 0.9083411693572998,
+                "z": 0.41155955195426941
+            },
+            "specular": {
+                "a": 1,
+                "b": 1,
+                "g": 1,
+                "r": 1
+            },
+            "type": "DIRECTIONAL_LIGHT"
+        },
+        "lighting": true,
+        "lightingSide": "TWO_SIDE",
+        "method": "REGULAR_GRID_VOLUME_RAY_CASTING",
+        "tfPreIntegration": true,
+        "volume": {
+            "boundingBox": {
+                "maximum": {
+                    "x": 10239,
+                    "y": 7679,
+                    "z": 1535
+                },
+                "minimum": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            "boundingBoxColor": {
+                "a": 1,
+                "b": 1,
+                "g": 1,
+                "r": 1
+            },
+            "boundingBoxVisible": false,
+            "clippingBox": {
+                "maximum": {
+                    "x": 10239,
+                    "y": 7679,
+                    "z": 1535
+                },
+                "minimum": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            "dataId": 1,
+            "interpolationType": "CUBIC_INTERPOLATION",
+            "material": {
+                "ambient": 0.69999998807907104,
+                "diffuse": 0,
+                "shininess": 40,
+                "specular": 0.30000001192092896
+            },
+            "opacityUnitDistance": 1,
+            "sampleDistance": 0.25,
+            "scalarMappingRange": {
+                "maximum": 1,
+                "minimum": 0
+            },
+            "slice": {
+                "x": {
+                    "position": 1021,
+                    "visible": false
+                },
+                "y": {
+                    "position": 360,
+                    "visible": false
+                },
+                "z": {
+                    "position": 742,
+                    "visible": false
+                }
+            },
+            "textureBox": {
+                "maximum": {
+                    "x": 10239.5,
+                    "y": 7679.5,
+                    "z": 1535.5
+                },
+                "minimum": {
+                    "x": -0.5,
+                    "y": -0.5,
+                    "z": -0.5
+                }
+            },
+            "transferFunction": {
+                "alphaArray": {
+                    "data": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+                    "encoding": "BASE64"
+                },
+                "colorControls": [
+                    {
+                        "color": {
+                            "b": 9.999999974752427e-07,
+                            "g": 9.999899930335232e-07,
+                            "r": 9.999899930335232e-07
+                        },
+                        "position": 0.0
+                    },
+                    {
+                        "color": {
+                            "b": 9.999999974752427e-07,
+                            "g": 9.999911299019004e-07,
+                            "r": 9.999899930335232e-07
+                        },
+                        "position": 0.602590024471283
+                    },
+                    {
+                        "color": {
+                            "b": 1.0,
+                            "g": 0.21104633808135986,
+                            "r": 0.10784316062927246
+                        },
+                        "position": 0.6088975667953491
+                    },
+                    {
+                        "color": {
+                            "b": 1.0,
+                            "g": 0.7768369913101196,
+                            "r": 0.6029411554336548
+                        },
+                        "position": 0.625356137752533
+                    },
+                    {
+                        "color": {
+                            "b": 0.9545847177505493,
+                            "g": 1.0,
+                            "r": 0.4852941036224365
+                        },
+                        "position": 0.6373773217201233
+                    },
+                    {
+                        "color": {
+                            "b": 0.33737021684646606,
+                            "g": 0.9558823704719543,
+                            "r": 0.34572839736938477
+                        },
+                        "position": 0.6495586633682251
+                    },
+                    {
+                        "color": {
+                            "b": 9.999899930335232e-07,
+                            "g": 9.999999974752427e-07,
+                            "r": 9.999954500017338e-07
+                        },
+                        "position": 0.6582696437835693
+                    },
+                    {
+                        "color": {
+                            "b": 9.999899930335232e-07,
+                            "g": 9.999999974752427e-07,
+                            "r": 9.999985195463523e-07
+                        },
+                        "position": 0.7295222282409668
+                    },
+                    {
+                        "color": {
+                            "b": 0.4950980544090271,
+                            "g": 0.9851498007774353,
+                            "r": 1.0
+                        },
+                        "position": 0.7496246695518494
+                    },
+                    {
+                        "color": {
+                            "b": 0.12254899740219116,
+                            "g": 1.0,
+                            "r": 0.8967698812484741
+                        },
+                        "position": 0.7706552743911743
+                    },
+                    {
+                        "color": {
+                            "b": 0.19999517500400543,
+                            "g": 0.4626631438732147,
+                            "r": 0.9950980544090271
+                        },
+                        "position": 0.7885404229164124
+                    },
+                    {
+                        "color": {
+                            "b": 0.2572568356990814,
+                            "g": 0.30960971117019653,
+                            "r": 0.9901960492134094
+                        },
+                        "position": 0.8043569326400757
+                    },
+                    {
+                        "color": {
+                            "b": 9.999899930335232e-07,
+                            "g": 9.999906751545495e-07,
+                            "r": 9.999999974752427e-07
+                        },
+                        "position": 0.8334384560585022
+                    },
+                    {
+                        "color": {
+                            "b": 9.999899930335232e-07,
+                            "g": 9.999899930335232e-07,
+                            "r": 9.999999974752427e-07
+                        },
+                        "position": 1.0
+                    }
+                ],
+                "opacityControl": [
+                    {
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.6077300906181335,
+                            "y": 0.0
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.6332136392593384,
+                            "y": 0.06907287240028381
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.665859580039978,
+                            "y": 0.0
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.7464832663536072,
+                            "y": 0.0
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.7823744416236877,
+                            "y": 0.06807294487953186
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.8185416460037231,
+                            "y": 0.0
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 1.0,
+                            "y": 0.0
+                        }
+                    }
+                ],
+                "resolution": 1024
+            },
+            "transferFunctionType": "TRANSFER_FUNCTION",
+            "visible": true
+        }
+    }
+}

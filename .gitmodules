@@ -1,0 +1,9 @@
+[submodule "stream"]
+	path = stream
+	url = https://github.com/Deralik/GPU-Out-of-Core-Volume-Data.git
+[submodule "NVTX"]
+	path = NVTX
+	url = https://github.com/NVIDIA/NVTX.git
+[submodule "base"]
+	path = base
+	url = git@github.com:wilsonCernWq/open-volume-renderer.git

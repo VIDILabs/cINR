@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Logger">
+      <UniqueIdentifier>{5a09e685-7848-475d-b970-756d2f75a45b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ThreadPool">
+      <UniqueIdentifier>{68c0c7ce-f4fe-49bc-8f2b-fb1041f09afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ThreadPool">
+      <UniqueIdentifier>{8d422e63-3374-40c2-864c-c191b0fd2eb0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\GcCore\libCommon\CppNorm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\FileSystem.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\KernelObject.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\LRUCache.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\Memory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\MPMCBoundedQueue.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\NonCopyable.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\Operator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\Singleton.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\Logger\LogCategory.hpp">
+      <Filter>Header Files\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\Logger\LogCommon.hpp">
+      <Filter>Header Files\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\Logger\Logger.hpp">
+      <Filter>Header Files\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\Logger\LoggerFormatter.hpp">
+      <Filter>Header Files\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\Logger\LoggerFormatterFileStd.hpp">
+      <Filter>Header Files\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\Logger\LogMessage.hpp">
+      <Filter>Header Files\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\Logger\LogWriter.hpp">
+      <Filter>Header Files\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\AbstractTask.hpp">
+      <Filter>Header Files\ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\Scheduler.hpp">
+      <Filter>Header Files\ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libCommon\ThreadPool.hpp">
+      <Filter>Header Files\ThreadPool</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\libCommon\FileSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libCommon\LogCategory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libCommon\Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libCommon\LoggerFormatterFileStd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libCommon\LogMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libCommon\LogWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libCommon\ThreadPoll.cpp">
+      <Filter>Source Files\ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libCommon\Scheduler.cpp">
+      <Filter>Source Files\ThreadPool</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

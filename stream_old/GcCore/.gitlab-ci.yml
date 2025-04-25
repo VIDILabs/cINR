@@ -1,0 +1,74 @@
+image: nvidia/cuda:8.0-devel-ubuntu16.04
+
+before_script:
+  - apt-get update -y
+  - apt-get install -y git
+
+stages:
+- build_debug
+- build_release
+- generate_package
+
+build_debug_job:
+  stage: build_debug
+  before_script:
+    - apt-get update -y
+    - apt-get install -y git
+    - apt-get install -y cmake
+    - apt-get install -y libsdl2-dev
+    - apt-get install -y libglm-dev
+    - cd dependencies
+    - mkdir build
+    - cd build
+    - cmake ../ -DBUILD_NVPIPE=OFF
+    - make
+    - cd ../..
+  script:
+    - mkdir build
+    - cd build
+    - cmake ../src -DCMAKE_BUILD_TYPE=Debug -DSHARED=ON
+    - make -j 12
+    - cd ..
+    - rm -rf build/
+  artifacts:
+    paths:
+      - bin/Debug/
+    expire_in: 1h
+
+
+build_release_job:
+  stage: build_release
+  before_script:
+    - apt-get update -y
+    - apt-get install -y git
+    - apt-get install -y cmake
+    - apt-get install -y libsdl2-dev
+    - apt-get install -y libglm-dev
+    - cd dependencies
+    - mkdir build
+    - cd build
+    - cmake ../ -DBUILD_NVPIPE=OFF
+    - make
+    - cd ../..
+  script:
+    - mkdir build
+    - cd build
+    - cmake ../src -DCMAKE_BUILD_TYPE=Release -DSHARED=ON
+    - make -j 12
+    - cd ..
+    - rm -rf build/
+  artifacts:
+    paths:
+      - bin/Release/
+    expire_in: 1h
+
+generate_package_job:
+  stage: generate_package
+  dependencies:
+    - build_debug_job
+    - build_release_job
+  script:
+    - tar -cvzf GcCore.tar.gz include/ bin/
+  artifacts:
+    paths:
+      - GcCore.tar.gz

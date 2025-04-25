@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['rasterizerflags',['RasterizerFlags',['../struct_im_font_config.html#a80d05eea7733731a3e9ac1d9e905e5b3',1,'ImFontConfig']]],
+  ['rasterizermultiply',['RasterizerMultiply',['../struct_im_font_config.html#a9365265cc52098a8ecf89ff47f6106f2',1,'ImFontConfig']]],
+  ['read_5ftext_5fchunks',['read_text_chunks',['../struct_lode_p_n_g_decoder_settings.html#aa1212905c3f73d9fffef2c04a220d951',1,'LodePNGDecoderSettings']]],
+  ['readlinefn',['ReadLineFn',['../struct_im_gui_settings_handler.html#a0a02bad8569c2d9f22e1a532d1e2de60',1,'ImGuiSettingsHandler']]],
+  ['readonly',['ReadOnly',['../struct_im_gui_text_edit_callback_data.html#a37cec257a392910f386188978027541c',1,'ImGuiTextEditCallbackData']]],
+  ['readopenfn',['ReadOpenFn',['../struct_im_gui_settings_handler.html#accadc3cc1599382b55b58dac53df0b24',1,'ImGuiSettingsHandler']]],
+  ['realvolumessizes',['RealVolumesSizes',['../structtdns_1_1data_1_1_volume_configuration.html#a762da55e178234b5803f5d86a4af1491',1,'tdns::data::VolumeConfiguration']]],
+  ['rectrel',['RectRel',['../struct_im_gui_nav_move_result.html#ae1be85fdcad1fc7c2bfa367862da2ccf',1,'ImGuiNavMoveResult']]],
+  ['redo_5fchar_5fpoint',['redo_char_point',['../struct_im_gui_stb_1_1_stb_undo_state.html#a78a5419b9c8278da078ed7acd2daac23',1,'ImGuiStb::StbUndoState::redo_char_point()'],['../struct_stb_undo_state.html#a928f655e4af8945a14d99e944441704a',1,'StbUndoState::redo_char_point()']]],
+  ['redo_5fpoint',['redo_point',['../struct_im_gui_stb_1_1_stb_undo_state.html#a6562a15b41f003f411253fe34ca81612',1,'ImGuiStb::StbUndoState::redo_point()'],['../struct_stb_undo_state.html#a719ba014b2db8a8ea55739664b445af0',1,'StbUndoState::redo_point()']]],
+  ['refframe',['RefFrame',['../struct_im_gui_once_upon_a_frame.html#a2d44776b8e7bdeec217f88be9f832e08',1,'ImGuiOnceUponAFrame']]],
+  ['remember_5funknown_5fchunks',['remember_unknown_chunks',['../struct_lode_p_n_g_decoder_settings.html#a8775e4fc539dc457916720f52b442f27',1,'LodePNGDecoderSettings']]],
+  ['renderdrawlistsfn',['RenderDrawListsFn',['../struct_im_gui_i_o.html#ae16a9f25f36fe9706d8a33fb128e538a',1,'ImGuiIO']]],
+  ['resize_5fgrip_5fdef',['resize_grip_def',['../imgui_8cpp.html#a4172a86a71ad90be6fb63c63f362222d',1,'imgui.cpp']]],
+  ['rootwindow',['RootWindow',['../struct_im_gui_window.html#aef9281297b0993c8f1b7c1ff7987cb61',1,'ImGuiWindow']]],
+  ['rootwindowfornav',['RootWindowForNav',['../struct_im_gui_window.html#a949a4aa260a21e8a8d2f65ffbe789712',1,'ImGuiWindow']]],
+  ['rootwindowfortabbing',['RootWindowForTabbing',['../struct_im_gui_window.html#a2b1c8c5a924faf5130499878b51d133a',1,'ImGuiWindow']]],
+  ['rootwindowfortitlebarhighlight',['RootWindowForTitleBarHighlight',['../struct_im_gui_window.html#ae5d5c6637b63f35edc415162a5674c1e',1,'ImGuiWindow']]]
+];

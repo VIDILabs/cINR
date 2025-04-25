@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\SDL2">
+      <UniqueIdentifier>{9bbb9377-c353-4425-a0da-a4f58093ebd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\imgui">
+      <UniqueIdentifier>{385d78dd-924f-4fec-8bb7-489cdda96e4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDL2">
+      <UniqueIdentifier>{5dd40c45-66ff-4ac7-b4c8-925f3544e725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\imgui">
+      <UniqueIdentifier>{ac12e50a-0922-40fa-897b-fd59979f156f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\Camera.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\FrameConverter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\Lut.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\Shader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\SDL2\SDLConstext.hpp">
+      <Filter>Header Files\SDL2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\SDL2\SDLGLWindow.hpp">
+      <Filter>Header Files\SDL2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\SDL2\SDLHelper.hpp">
+      <Filter>Header Files\SDL2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\imgui\imconfig.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\imgui\imgui.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\imgui\imgui_impl_sdl_gl3.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\imgui\imgui_internal.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\imgui\stb_rect_pack.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\imgui\stb_textedit.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libGraphics\imgui\stb_truetype.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\MultiViewCamera.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\libGraphics\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libGraphics\FrameConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libGraphics\Lut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libGraphics\SDL2\SDLContext.cpp">
+      <Filter>Source Files\SDL2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libGraphics\SDL2\SDLGLWindow.cpp">
+      <Filter>Source Files\SDL2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libGraphics\SDL2\SDLHelper.cpp">
+      <Filter>Source Files\SDL2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libGraphics\imgui\imgui.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libGraphics\imgui\imgui_demo.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libGraphics\imgui\imgui_draw.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libGraphics\imgui\imgui_impl_sdl_gl3.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cuda\libGraphics\MultiViewCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

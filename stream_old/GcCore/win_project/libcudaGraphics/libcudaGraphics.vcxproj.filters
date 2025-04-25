@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a63f9565-41b5-4b1f-8ce4-3116eeac5d68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6d3ca8c4-8d82-45e0-862e-25435c2c35b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Raycaster">
+      <UniqueIdentifier>{2ffaea95-4fff-4182-9f17-22c2e541455a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Raycaster">
+      <UniqueIdentifier>{04fe2eff-8122-48e6-ab85-3d69dd1b8ef0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\cuda\libGraphics\VolumeRayCaster\Camera2.cpp">
+      <Filter>Source Files\Raycaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cuda\libGraphics\VolumeRayCaster\Display_helper.cpp">
+      <Filter>Source Files\Raycaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cuda\libGraphics\VolumeRayCaster\Light.cpp">
+      <Filter>Source Files\Raycaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cuda\libGraphics\VolumeRayCaster\lodepng.cpp">
+      <Filter>Source Files\Raycaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cuda\libGraphics\VolumeRayCaster\TransferFunction.cpp">
+      <Filter>Source Files\Raycaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cuda\libGraphics\VolumeRayCaster\TransferFunctionSpline.cpp">
+      <Filter>Source Files\Raycaster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cuda\libGraphics\MultiViewCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\src\cuda\libGraphics\VolumeRayCaster\DistributedVolumeRayCaster.cu">
+      <Filter>Source Files\Raycaster</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\src\cuda\libGraphics\VolumeRayCaster\RayCasters.cu">
+      <Filter>Source Files\Raycaster</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\src\cuda\libGraphics\VolumeRayCaster\VolumeRayCaster.cu">
+      <Filter>Source Files\Raycaster</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\src\cuda\libGraphics\Display.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\src\cuda\libGraphics\Processing.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\src\cuda\libGraphics\Laplacian.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\src\cuda\libGraphics\MorphoMath.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\VolumeRayCaster\Camera2.hpp">
+      <Filter>Header Files\Raycaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\VolumeRayCaster\Display_helper.hpp">
+      <Filter>Header Files\Raycaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\VolumeRayCaster\DistributedVolumeRayCaster.hpp">
+      <Filter>Header Files\Raycaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\VolumeRayCaster\helper_math.h">
+      <Filter>Header Files\Raycaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\VolumeRayCaster\K_Light.hpp">
+      <Filter>Header Files\Raycaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\VolumeRayCaster\Light.hpp">
+      <Filter>Header Files\Raycaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\VolumeRayCaster\lodepng.h">
+      <Filter>Header Files\Raycaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\VolumeRayCaster\RayCasters_helpers.hpp">
+      <Filter>Header Files\Raycaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\VolumeRayCaster\TransferFunction.hpp">
+      <Filter>Header Files\Raycaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\VolumeRayCaster\TransferFunctionSpline.hpp">
+      <Filter>Header Files\Raycaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\VolumeRayCaster\VolumeRayCaster.hpp">
+      <Filter>Header Files\Raycaster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\Display.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\MultiViewCamera.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\Processing.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\Laplacian.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\cuda\libGraphics\MorphoMath.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

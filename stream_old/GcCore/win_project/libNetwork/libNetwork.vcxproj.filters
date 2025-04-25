@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Messages">
+      <UniqueIdentifier>{4d5c2a53-42e5-4f08-b473-3ee87cf2ae96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Messages">
+      <UniqueIdentifier>{3edb4068-7957-4e25-919e-d7b3bec00972}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\AcceptTask.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\Client.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\ClientManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\MessageFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\Socket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\TcpCFunctions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\TcpServer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\WebsocketHandshake.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\Message.hpp">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\MessageCamera.hpp">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\MessageConfiguration.hpp">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\MessageHandler.hpp">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\MessageTask.hpp">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\MessageH264Chunks.hpp">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\WinNetwork.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GcCore\libNetwork\MessageTransferFunction.hpp">
+      <Filter>Header Files\Messages</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\libNetwork\Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\ClientManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\MessageFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\TcpServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\Message.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\MessageCamera.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\MessageConfiguration.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\MessageHandler.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\MessageTask.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\MessageH264Chunks.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\TcpTrait.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\UdpTrait.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\WinNetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libNetwork\MessageTransferFunction.cpp">
+      <Filter>Source Files\Messages</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
