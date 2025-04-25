@@ -207,7 +207,7 @@ void RenderObject::render(vec4f* fb, vnr::NeuralVolume* _unused, OpaqueCacheMana
   // sparams.lod_scale = lod.start_lod_scale;
   sparams.lod_threshold = lod.threshold;
 
-  lod.start_lod_scale = lod.scale; // Comment this out to enable lod-preloading
+  // lod.start_lod_scale = lod.scale; // Comment this out to enable lod-preloading
 
   // TODO: can possibly pass the new net_id here then through to the CM to reload the net in the BM (the Macrocell structure won't be reloaded this way however)
   if (lod.start_lod_scale != lod.scale) {

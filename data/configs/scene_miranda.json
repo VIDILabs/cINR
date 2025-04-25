@@ -25,7 +25,7 @@
   ],
   "cache": {
     "config" : [
-      "/home/deralik/GitHub/cINR_env/cINR/data/configs/config_miranda.cfg"
+      "/home/deralik/GitHub/cINR/data/configs/config_miranda.cfg"
       // "/home/deralik/GitHub/open-volume-renderer/data/configs/config_beechnut.cfg"
     ],
     "capacity": {
@@ -37,7 +37,7 @@
   },
   "macrocell": {
     "fileName": [
-      "/home/deralik/GitHub/cINR_env/cINR/data/data/miranda_1024x1024x1024_float32/params.json"
+      "/home/deralik/GitHub/cINR/data/data/miranda_1024x1024x1024_float32/params.json"
     ],
     "mcSize" : {
       "x": 16,
