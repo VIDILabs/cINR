@@ -89,6 +89,6 @@ if(OVR_BUILD_MODULE_NNCACHE)
   add_subdirectory(ovr/apps)
 
   # Profiling
-  add_subdirectory(NVTX/c)
+  # add_subdirectory(NVTX/c)
 
 endif()

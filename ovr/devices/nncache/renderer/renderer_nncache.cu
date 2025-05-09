@@ -13,7 +13,7 @@ using default_rng_t = TCNN_NAMESPACE :: default_rng_t;
 
 #include <iostream>
 
-#include <nvtx3/nvtx3.hpp>
+// #include <nvtx3/nvtx3.hpp>
 
 using tdns::gpucache::CacheManager;
 using tdns::gpucache::VoxelStatus;
@@ -76,7 +76,7 @@ IterativeSampler create_sampler(vnrNetwork net, SamplerParams* params, CacheMana
   return [=] (cudaStream_t stream, uint32_t count, vec3f* __restrict__ d_coords, float* __restrict__ d_values) {
     if (count == 0) return;
 
-    nvtx3::scoped_range nvtx_main{"iterative_lambda_sampler"};
+    // nvtx3::scoped_range nvtx_main{"iterative_lambda_sampler"};
 
     // stream = nullptr; // WHY: our network implementation uses cuda graph capturing, but causing conflict with our cache implementation.
     // Setting stream to nullptr will force the cuda graph to be disabled.
@@ -91,7 +91,7 @@ IterativeSampler create_sampler(vnrNetwork net, SamplerParams* params, CacheMana
     }
 
     else { // mode != 2
-      nvtx3::scoped_range nvtx_sampler_cache_kernel{"sampler_cache_kernel"};
+      // nvtx3::scoped_range nvtx_sampler_cache_kernel{"sampler_cache_kernel"};
 
       cudaMemsetAsync(params->d_miss_count, 0, sizeof(uint32_t), stream);
 
@@ -101,7 +101,7 @@ IterativeSampler create_sampler(vnrNetwork net, SamplerParams* params, CacheMana
 
       if (enable_network_fallback) { // mode == 0
 
-        nvtx3::scoped_range nvtx_sampler_cache_kernel{"network_fallback"};
+        // nvtx3::scoped_range nvtx_sampler_cache_kernel{"network_fallback"};
 
         uint32_t h_miss_count;
         cudaMemcpyAsync(&h_miss_count, params->d_miss_count, sizeof(uint32_t), cudaMemcpyDeviceToHost, stream);
@@ -135,7 +135,7 @@ static default_rng_t rng{ 1337 };
 template<typename T>
 void render_with_cache(vnrNetwork net, SamplerParams& sparams, CacheManager<T>* cache, std::function<void(IterativeSampler)> callback) 
 {
-  NVTX3_FUNC_RANGE();
+  // NVTX3_FUNC_RANGE();
 
   // Then, rendering
   TRACE_CUDA;

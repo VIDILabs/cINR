@@ -48,7 +48,7 @@ target_link_libraries (device_nncache PRIVATE
   rendercommon 
   nncache_core 
   TBB::tbb 
-  nvtx3-cpp
+  # nvtx3-cpp
 )
 target_compile_options(device_nncache PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:${CUDA_NVCC_FLAGS}>)
 
