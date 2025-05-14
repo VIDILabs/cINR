@@ -295,7 +295,7 @@ pathtracing_allocate_interative(PathTracingData& params,
   }
 
   // allocate space for sample streaming data
-  sbuffer.resize(numPixelsPadded * (sizeof(vec3f) + sizeof(float) + sizeof(float)), stream); // coords + values
+  sbuffer.resize(numPixelsPadded * (sizeof(vec3f) + sizeof(float)), stream); // coords + values
   {
     auto* curr = (char*)sbuffer.d_pointer();
     params.inference_coords = define_buffer<vec3f>(curr, numPixelsPadded);

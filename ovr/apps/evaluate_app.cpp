@@ -162,7 +162,7 @@ public:
 
   std::chrono::high_resolution_clock::time_point start;
 
-  std::string mode = "RM";
+  std::string mode = "RECORD OFF";
 
 public:
   MainWindow(const std::string& title,
@@ -676,10 +676,10 @@ main(int ac, const char** av)
   }
   scene_file = av[1];
 
-  std::string device = "optix7";
-  if (ac >= 3) {
-    device = av[2];
-  }
+  std::string device = "nncache";
+  // if (ac >= 3) {
+  //   device = av[2];
+  // }
   
   std::string tfn = "";
   // if (ac >= 4) {
@@ -745,13 +745,13 @@ main(int ac, const char** av)
   // -------------------------------------------------------
   MainWindow* window = new MainWindow("OVR", renderer, layer, scene.camera, worldScale, 768, 768, tfn);
 
-  if (ac >= 4) {
-    window->mode = av[3];
+  if (ac >= 3) {
+    window->mode = av[2];
   }
 
-  // set max frame count as -1 to allow for infinite rendering
-  if (ac >= 5) {
-    window->max_frame_count = std::stoi(av[4]);
+  // set max frame count as -1 to allow for infinite rendering/recording
+  if (ac >= 4) {
+    window->max_frame_count = std::stoi(av[3]);
   }
 
   window->run();

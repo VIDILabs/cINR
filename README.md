@@ -18,12 +18,10 @@ Cached Implicit Neural Radiance rendering demonstration.
 
 ## Building
 
-- Clone ~~`open-volume-renderer`~~ (this is no longer needed) and `cINR` and enter into the `stream` folder.
-
 ```bash
 # git clone git@github.com:wilsonCernWq/open-volume-renderer.git
 # cd open-volume-renderer/projects
-git clone git@github.com:Deralik/cINR.git
+git clone git@github.com:VIDILabs/cINR.git
 cd cINR
 git submodule update --init --recursive
 ```
@@ -57,33 +55,28 @@ If your default CUDA compiler is older, you can specify the version of CUDA manu
 
 ## Data and Config
 
-All data requires a `scene.json` file for the OVR, a `config.cfg` file for the Cache Manager and a `params.json` file for model params and the macrocell.
+All data requires a `scene.json` file for the OVR app, a `config.cfg` file for the Cache Manager and a `params.json` file for model params and the macrocell.
 
-**Example scene, config, and params files are included in `cINR/data`. Relocate these to the data folder in OVR.**  
+**Example scene, config, and params files are included in `cINR/data`.**  
 
-The `config.cfg` file should follow the same conventions as defined in `GcCore` with the `"WorkingDirectory"` containing the absolute path to `open-volume-renderer/data`.
+The `config.cfg` file should be updated with the correct volume dimensions and path to the model weights.
 
-The `VolumeFile` field us unused in this project. 
-
-The scene file should mirror the structure of our example scenes. \
-`cache.capacity` is also fully configerable based on the GPU.
-
+The scene file should mirror the structure of our example scenes. 
 
 ```json
 { 
   // ... //
   "cache": {
     "config" : "<...>/config_miranda.cfg",
-    // This cache at a brick size of 40 will be roughly 2.6GB
+    // Cache dimensions, configure to fit into available VRAM
     "capacity": {
-      "x": 13,
-      "y": 13,
-      "z": 13
+      "x": 30,
+      "y": 30,
+      "z": 30
     },
-    "numLevels": 1 //Max desired LoD
   },
   "macrocell": {
-    "fileName": "<...>/miranda_1024x1024x1024_float32/params.json",
+    "fileName": "<...>/miranda_params.json",
     //...
     //...
     }
@@ -102,8 +95,13 @@ If using VSCode, the following launch configuration may be added to `launch.json
     "request": "launch",
     "program": "${workspaceFolder}/build/evalapp",
     "args": [
-        "configs/scene_miranda.json",
-        "nncache",
+        "configs/scene_miranda.json", // Scene file
+        "RM",                         // [Optional] Enable Ray Marching(RM)/Path Tracing(PT) data recording 
+        "4000",                       // [Optional] Change the number of frames to record
+        "1.0",                        // [Optional] Change the default target LoD scaling factor
+        "83",                         // [Optional] Change the default phi for the directional light source
+        "103",                        // [Optional] Change the default theta for the directional light source
+        "1.5"                         // [Optional] Change the default light intensity 
     ],
     "stopAtEntry": false,
     "cwd": "${workspaceFolder}/data",
@@ -121,7 +119,7 @@ If using VSCode, the following launch configuration may be added to `launch.json
 
 If running directly from the terminal, navigate to the root `data` folder.
 ```bash
-../build/evalapp configs/scene_miranda.json nncache
+../build/evalapp configs/scene_miranda.json
 ```
 
 ## Docker
@@ -143,5 +141,5 @@ docker run -ti --rm --runtime=nvidia --gpus all                         \
     -e CUDA_VISIBLE_DEVICES -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v /mnt:/mnt -v /media:/media -v $(pwd):/workspace                  \
     wilsonovercloud/cacheinr:devel                                      \
-    ./evalapp /workspace/data/configs/scene_miranda.json nncache RM -1
+    ./evalapp /workspace/data/configs/scene_miranda.json RM -1
 ```

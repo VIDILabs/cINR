@@ -26,13 +26,13 @@ DeviceNNCache::init(int argc, const char** argv)
     d.tfn_value_range = st.value_range;
   });
 
-  if (argc >= 6)
-    api.lod.scale = std::stof(argv[5]);
+  if (argc >= 5)
+    api.lod.scale = std::stof(argv[4]);
 
-  if (argc >= 7) {
-    ctls.phi = std::stof(argv[6]);
-    ctls.theta = std::stof(argv[7]);
-    ctls.intensity = std::stof(argv[8]);
+  if (argc >= 6) {
+    ctls.phi = std::stof(argv[5]);
+    ctls.theta = std::stof(argv[6]);
+    ctls.intensity = std::stof(argv[7]);
   }
 
   // --------------------------------------------------------------------------
