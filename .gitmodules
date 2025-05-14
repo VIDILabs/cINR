@@ -1,6 +1,7 @@
 [submodule "stream"]
 	path = stream
 	url = https://github.com/Deralik/GPU-Out-of-Core-Volume-Data.git
+	branch = main
 [submodule "base"]
 	path = base
 	url = https://github.com/wilsonCernWq/open-volume-renderer.git
