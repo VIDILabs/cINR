@@ -10,17 +10,11 @@
         "z" : 2160
       },
       "endian" : "LITTLE_ENDIAN",
-      "fileName" : [
-        // "/instantvnr/data/chameleon_1024x1024x1080_uint16.raw",
-        // "/media/data/qadwu/volume/openscivis/chameleon_1024x1024x1080_uint16.raw",
-        // "/home/qwu/Work/datasets/chameleon_1024x1024x1080_uint16.raw",
-        // "/home/qadwu/Data/chameleon/chameleon_1024x1024x1080_uint16.raw",
-        // "F:/openscivis/chameleon_1024x1024x1080_uint16.raw"
-      ],
+      "fileName" : [],
       "fileUpperLeft" : false,
       "format" : "REGULAR_GRID_RAW_BINARY",
       "id" : 1,
-      "name" : "chameleon_1024x1024x1080_float32.raw",
+      "name" : "",
       "offset" : 0,
       "type" : "FLOAT"
     }
@@ -28,7 +22,7 @@
   "snapshot" : [
   ],
   "cache": {
-    "config" : "/home/deralik/GitHub/cINR_env/cINR/data/configs/config_chameleon.cfg",
+    "config" : "./configs/config_chameleon.cfg",
     "capacity": {
       "x": 30,
       "y": 30,
@@ -37,7 +31,7 @@
     "numLevels": 1
   },
   "macrocell": {
-    "fileName" : "/home/deralik/GitHub/cINR_env/cINR/data/data/chameleon_1024x1024x1080_float32/params.json",
+    "fileName" : "./data/chameleon_params.json",
     "mcSize" : {
       "x": 16,
       "y": 16,

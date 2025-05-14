@@ -22,7 +22,7 @@
   ],
   "cache": {
     "config" : [
-      "/home/deralik/GitHub/cINR/data/configs/config_miranda.cfg"
+      "./configs/config_miranda.cfg"
     ],
     "capacity": {
       "x": 30,
@@ -32,7 +32,7 @@
   },
   "macrocell": {
     "fileName": [
-      "/home/deralik/GitHub/cINR/data/data/miranda_params.json"
+      "./data/miranda_params.json"
     ],
     "mcSize" : {
       "x": 16,
