@@ -40,9 +40,9 @@ DeviceNNCache::ui() {
       ctls.lod_scale = locals.lod_scale;
     }
 
-    if (ImGui::SliderFloat("LoD Threshold", &locals.lod_threshold, 0.1f, 10.f, "%.3f")) {
-      ctls.lod_threshold = locals.lod_threshold;
-    }
+    // if (ImGui::SliderFloat("LoD Threshold", &locals.lod_threshold, 0.1f, 10.f, "%.3f")) {
+    //   ctls.lod_threshold = locals.lod_threshold;
+    // }
 
     ImGui::Checkbox("Edit Light & Material", &locals.edit_lm); 
     if (locals.edit_lm) {

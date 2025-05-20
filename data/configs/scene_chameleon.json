@@ -27,11 +27,12 @@
       "x": 30,
       "y": 30,
       "z": 30
-    },
-    "numLevels": 1
+    }
   },
   "macrocell": {
-    "fileName" : "./data/chameleon_params.json",
+    "fileName" : [
+      "./data/chameleon_params.json"
+    ],
     "mcSize" : {
       "x": 16,
       "y": 16,
