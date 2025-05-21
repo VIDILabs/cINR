@@ -100,7 +100,7 @@ If using VSCode, the following launch configuration may be added to `launch.json
         "4000",                       // [Optional] Change the number of frames to record
         "1.0",                        // [Optional] Change the default target LoD scaling factor
         "83",                         // [Optional] Change the default phi for the directional light source
-        "103",                        // [Optional] Change the default theta for the directional light source
+        "48",                        // [Optional] Change the default theta for the directional light source
         "1.5"                         // [Optional] Change the default light intensity 
     ],
     "stopAtEntry": false,
