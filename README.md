@@ -1,9 +1,13 @@
-# cINR using (OVR)
-{ project description/paper links }
+# cINR: A Cache-Accelerated INR framework for Interactive Visualization of Tera-Scale Data
+*Machine learning has enabled the use of implicit neural representations (INRs) to efficiently compress and reconstruct massive scientific datasets. However, despite advances in fast INR rendering algorithms, INR-based rendering remains computationally expensive, as computing data values from an INR is significantly slower than reading them from GPU memory. This bottleneck currently restricts interactive INR visualization to professional workstations. To address this challenge, we introduce an INR rendering framework accelerated by a scalable, multi-resolution GPU cache capable of efficiently representing tera-scale datasets. By minimizing redundant data queries and prioritizing novel volume regions, our method reduces the number of INR computations per frame, achieving an average 5x speedup over the state-of-the-art INR rendering method while still maintaining high visualization quality. Coupled with existing hardware-accelerated INR compressors, our framework enables scientists to generate and compress massive datasets in situ on high-performance computing platforms and then interactively explore them on consumer-grade hardware post hoc.*
+
+[Paper](https://arxiv.org/abs/2504.18001v3)
 
 ## Overview
 
-Cached Implicit Neural Radiance rendering demonstration.   
+[] TODO: Add training instructions for existing apps. \
+[] TODO: Add docker instructions for included file. \
+[] TODO: Create/update teaser image for the project. 
 
 ## Dependencies
 
@@ -84,6 +88,8 @@ The scene file should mirror the structure of our example scenes.
   // ... //
 }
 ```
+## Training [TODO]
+*An instructional guide to using the provided training applications is coming soon*
 
 ## Running
 
@@ -122,24 +128,6 @@ If running directly from the terminal, navigate to the root `data` folder.
 ../build/evalapp configs/scene_miranda.json
 ```
 
-## Docker
+## Docker [TODO]
 
-There is a Dockerfile provided for running the application in a container. This is useful for running on a machine without the necessary dependencies.
-
-To build the image, navigate to the root of the project and run:
-```bash
-docker build -t wilsonovercloud/cacheinr:devel .
-# docker tag cinr wilsonovercloud/cacheinr:devel
-# docker push wilsonovercloud/cacheinr:devel
-```
-
-To run the container, use the following command:
-
-```bash
-xhost +si:localuser:root
-docker run -ti --rm --runtime=nvidia --gpus all                         \
-    -e CUDA_VISIBLE_DEVICES -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
-    -v /mnt:/mnt -v /media:/media -v $(pwd):/workspace                  \
-    wilsonovercloud/cacheinr:devel                                      \
-    ./evalapp /workspace/data/configs/scene_miranda.json RM -1
-```
+*Instructions coming soon*
